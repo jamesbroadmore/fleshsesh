@@ -194,11 +194,11 @@ const EcosystemPage = () => {
                 Join as Creator
               </Button>
             </Link>
-            <Link href="/watch">
+            <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-pink text-pink hover:bg-pink hover:text-white">
                 Explore Cams
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
