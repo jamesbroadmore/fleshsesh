@@ -40,7 +40,15 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center z-50">
-            <span className="text-2xl font-bold text-pink">FLESHSESH</span>
+            <div className="w-40 h-12 relative">
+              <Image
+                src="/brand/fleshsesh-wordmark-lips.png"
+                alt="FLESHSESH"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation Links */}
