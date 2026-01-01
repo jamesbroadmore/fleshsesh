@@ -122,7 +122,14 @@ const HomePage = () => {
 
         {/* Decorative Pink Accent */}
         <div className="mt-16 flex justify-center">
-          <div className="w-24 h-24 rounded-full bg-pink/20 glow-pink-strong"></div>
+          <div className="w-48 h-48 relative animate-glow-pulse">
+            <Image
+              src="/brand/fleshsesh-sticker-pink.png"
+              alt="FLESHSESH"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </section>
 
