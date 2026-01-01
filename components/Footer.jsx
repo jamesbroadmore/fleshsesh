@@ -10,7 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Logo and tagline */}
           <div className="lg:col-span-1">
-            <span className="text-xl font-bold text-pink">FLESHSESH</span>
+            <div className="w-32 h-10 relative mb-4">
+              <Image
+                src="/brand/fleshsesh-wordmark-lips.png"
+                alt="FLESHSESH"
+                fill
+                className="object-contain"
+              />
+            </div>
             <p className="text-sm text-muted-foreground mt-4">
               Creator-first adult ecosystem
             </p>
