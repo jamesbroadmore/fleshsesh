@@ -7,12 +7,12 @@ const BackgroundSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
-    'https://images.unsplash.com/photo-1615984259571-4d4d1084abbd?w=1920&q=80',
-    'https://images.unsplash.com/photo-1701286618296-b40443dc63a9?w=1920&q=80',
-    'https://images.unsplash.com/photo-1701287348766-2eeb0e16f874?w=1920&q=80',
-    'https://images.unsplash.com/photo-1542513217-0b0eedf7005d?w=1920&q=80',
-    'https://images.unsplash.com/photo-1699783021126-80783ef0e54f?w=1920&q=80',
-    'https://images.pexels.com/photos/2531356/pexels-photo-2531356.jpeg?w=1920&q=80'
+    'https://images.unsplash.com/photo-1565014208903-fdfd6c464221?w=1920&q=80',
+    'https://images.unsplash.com/photo-1526404746352-668ded9b50ab?w=1920&q=80',
+    'https://images.unsplash.com/photo-1611699082439-a8de44ba565f?w=1920&q=80',
+    'https://images.unsplash.com/photo-1710968282393-8725f1c7b77b?w=1920&q=80',
+    'https://images.unsplash.com/photo-1575553940130-23d2a8249ba3?w=1920&q=80',
+    'https://images.unsplash.com/photo-1526604330406-5fc5bf5224e4?w=1920&q=80'
   ]
 
   useEffect(() => {
