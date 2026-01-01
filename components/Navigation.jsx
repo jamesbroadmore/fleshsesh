@@ -215,11 +215,11 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
-            <Link href="/watch">
+            <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
               <Button className="bg-pink hover:bg-pink-600 text-white glow-pink transition-all">
                 Watch Live
               </Button>
-            </Link>
+            </a>
             <Link href="/shop">
               <Button variant="outline" className="border-pink text-pink hover:bg-pink hover:text-white transition-all">
                 Shop
