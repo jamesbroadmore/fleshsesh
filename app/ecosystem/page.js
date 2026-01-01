@@ -124,11 +124,11 @@ const EcosystemPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link href={product.href}>
+                    <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
                       <Button className="w-full bg-pink hover:bg-pink-600 text-white">
                         Explore
                       </Button>
-                    </Link>
+                    </a>
                   </CardContent>
                 </Card>
               ))}
