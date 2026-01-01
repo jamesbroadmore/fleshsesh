@@ -58,9 +58,9 @@ const ContactPage = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-2">General Inquiries:</p>
-                <p className="text-pink">hello@fleshsesh.com</p>
+                <p className="text-pink">hello@www.fleshsesh.com</p>
                 <p className="text-muted-foreground text-sm mt-4 mb-2">Support:</p>
-                <p className="text-pink">support@fleshsesh.com</p>
+                <p className="text-pink">support@www.fleshsesh.com</p>
               </CardContent>
             </Card>
 
