@@ -166,7 +166,7 @@ const HomePage = () => {
                 <CardDescription className="text-base">{product.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href={product.href}>
+                <Link href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-pink hover:bg-pink-600 text-white">
                     {product.cta}
                   </Button>
