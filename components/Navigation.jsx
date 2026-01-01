@@ -259,11 +259,11 @@ const Navigation = () => {
                 Contact
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
-                <Link href="/watch">
+                <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-pink hover:bg-pink-600 text-white">
                     Watch Live
                   </Button>
-                </Link>
+                </a>
                 <Link href="/shop">
                   <Button variant="outline" className="w-full border-pink text-pink hover:bg-pink hover:text-white">
                     Shop
