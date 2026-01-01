@@ -73,7 +73,7 @@ const ContactPage = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-2">Dedicated creator support:</p>
-                <p className="text-pink">creators@fleshsesh.com</p>
+                <p className="text-pink">creators@www.fleshsesh.com</p>
               </CardContent>
             </Card>
 
