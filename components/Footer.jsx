@@ -21,9 +21,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-pink">Ecosystem</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/watch" className="text-sm text-muted-foreground hover:text-pink transition-colors">
+                <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-pink transition-colors">
                   Watch Live
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/models" className="text-sm text-muted-foreground hover:text-pink transition-colors">
