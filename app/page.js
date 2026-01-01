@@ -78,11 +78,16 @@ const HomePage = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="min-h-screen bg-background relative">
+      {/* Background Slideshow */}
+      <BackgroundSlideshow />
+      
+      {/* Content wrapper with relative positioning */}
+      <div className="relative z-10">
+        <Navigation />
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 lg:py-32">
+        {/* Hero Section */}
+        <section className="container mx-auto px-4 py-20 lg:py-32">
         <div className="max-w-5xl mx-auto text-center">
           <div className="mb-6 inline-block">
             <Badge className="bg-pink/10 text-pink border-pink/20 text-sm px-4 py-1">
