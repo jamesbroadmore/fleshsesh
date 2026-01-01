@@ -1,15 +1,17 @@
 import './globals.css'
+import { Toaster } from '@/components/ui/sonner'
 
 export const metadata = {
-  title: 'Next.js MongoDB Template',
-  description: 'A simple template with App Router, MongoDB, and shadcn/ui',
+  title: 'FLESHSESH - Creator-First Adult Ecosystem',
+  description: 'Autonomy, safety, and scale — without compromising identity or control.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
         {children}
+        <Toaster />
       </body>
     </html>
   )
