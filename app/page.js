@@ -240,6 +240,7 @@ const HomePage = () => {
       </section>
 
       <Footer />
+      </div>
     </div>
   )
 }
