@@ -96,11 +96,11 @@ const HomePage = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/watch">
+            <a href="https://webcams.fleshsesh.com" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-pink hover:bg-pink-600 text-white glow-pink text-lg px-8">
                 Watch Live
               </Button>
-            </Link>
+            </a>
             <Link href="/shop">
               <Button size="lg" variant="outline" className="border-pink text-pink hover:bg-pink hover:text-white text-lg px-8">
                 Shop the eStore
