@@ -9,7 +9,7 @@ import { ShoppingBag, Package, Heart, Shield } from 'lucide-react'
 
 const ShopPage = () => {
   const productCategories = [
-    { name: 'Creator Tools', description: 'Professional equipment for content creation', icon: <Package className="w-8 h-8" />, items: 24 },
+    { name:  'Creator Tools', description: 'Professional equipment for content creation', icon: <Package className="w-8 h-8" />, items: 24 },
     { name: 'Pleasure Tech', description: 'High-quality intimate products', icon: <Heart className="w-8 h-8" />, items: 156 },
     { name: 'Wellness', description: 'Aftercare and wellness essentials', icon: <Shield className="w-8 h-8" />, items: 42 },
     { name: 'Accessories', description: 'Costumes, lingerie, and more', icon: <ShoppingBag className="w-8 h-8" />, items: 89 }
@@ -35,13 +35,19 @@ const ShopPage = () => {
             <span className="text-pink">FLESHSESH</span> eStore
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Curated selection of pleasure tech, creator tools, and aftercare essentials.
+            Curated selection of pleasure tech, creator tools, and aftercare essentials. 
             Everything you need to thrive as a creator or enjoy premium experiences.
           </p>
-          <Button size="lg" className="bg-pink hover:bg-pink-600 text-white glow-pink">
-            <ShoppingBag className="mr-2 w-5 h-5" />
-            Browse Products
-          </Button>
+          <a 
+            href="https://store.fleshsesh.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" className="bg-pink hover:bg-pink-600 text-white glow-pink">
+              <ShoppingBag className="mr-2 w-5 h-5" />
+              Browse Products
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -49,43 +55,57 @@ const ShopPage = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">Shop by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {productCategories.map((category, index) => (
-              <Card key={index} className="hover:border-pink transition-all duration-300 hover:glow-pink cursor-pointer">
-                <CardHeader>
-                  <div className="p-3 rounded-lg bg-pink/10 text-pink w-fit mb-4">
-                    {category.icon}
-                  </div>
-                  <CardTitle className="text-xl">{category.name}</CardTitle>
-                  <CardDescription>{category.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{category.items} products</p>
-                </CardContent>
-              </Card>
+            {productCategories. map((category, index) => (
+              <a 
+                key={index}
+                href="https://store.fleshsesh.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Card className="hover:border-pink transition-all duration-300 hover:glow-pink cursor-pointer">
+                  <CardHeader>
+                    <div className="p-3 rounded-lg bg-pink/10 text-pink w-fit mb-4">
+                      {category.icon}
+                    </div>
+                    <CardTitle className="text-xl">{category.name}</CardTitle>
+                    <CardDescription>{category.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">{category.items} products</p>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
 
           <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product, index) => (
-              <Card key={index} className="hover:border-pink transition-all duration-300">
-                <div className="aspect-square bg-gradient-to-br from-pink/20 to-purple-900/20 relative flex items-center justify-center">
-                  <Package className="w-16 h-16 text-pink opacity-50" />
-                  <Badge className="absolute top-3 right-3 bg-pink/90 text-white">
-                    ★ {product.rating}
-                  </Badge>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg">{product.name}</CardTitle>
-                  <CardDescription>{product.category}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-2xl font-bold text-pink">{product.price}</p>
-                  <Button className="w-full bg-pink hover:bg-pink-600 text-white">
-                    Add to Cart
-                  </Button>
-                </CardContent>
-              </Card>
+              <a 
+                key={index}
+                href="https://store.fleshsesh.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Card className="hover:border-pink transition-all duration-300">
+                  <div className="aspect-square bg-gradient-to-br from-pink/20 to-purple-900/20 relative flex items-center justify-center">
+                    <Package className="w-16 h-16 text-pink opacity-50" />
+                    <Badge className="absolute top-3 right-3 bg-pink/90 text-white">
+                      ★ {product.rating}
+                    </Badge>
+                  </div>
+                  <CardHeader>
+                    <CardTitle className="text-lg">{product.name}</CardTitle>
+                    <CardDescription>{product.category}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <p className="text-2xl font-bold text-pink">{product.price}</p>
+                    <Button className="w-full bg-pink hover:bg-pink-600 text-white">
+                      View on Store
+                    </Button>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
