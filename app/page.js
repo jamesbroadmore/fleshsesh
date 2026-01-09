@@ -108,11 +108,11 @@ const HomePage = () => {
                 Watch Live
               </Button>
             </a>
-            <Link href="/shop">
+            <a href="https://store.fleshsesh.com" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-pink text-pink hover:bg-pink hover:text-white text-lg px-8">
                 Shop the eStore
               </Button>
-            </Link>
+            </a>
             <Link href="/ecosystem">
               <Button size="lg" variant="outline" className="text-lg px-8">
                 Explore Ecosystem
